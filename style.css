@@ -5,10 +5,8 @@
     font-family: Arial,Helvetica,sans-serif;
 }
 body {
-    width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #153677, #4e085f);
@@ -16,22 +14,80 @@ body {
 a {
     text-decoration: none;
 }
-ul {
+ul li{
     list-style: none;
+    cursor: pointer;
+    padding: 1rem 0;
+}
+ul li::before {
+    
 }
 
 .container {
-    width: 50%;
-    min-height: 50vh;
     padding: 2rem 2rem;
     background-color: #fff;
     border-radius: 1.5rem;
 }
-
+.container .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container .content-title h1{
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-bottom: 1.1em;
+    margin-bottom: 1rem;
+}
+.container .content-container .search-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30rem;
+    height: 2rem;
+    border-radius: 3rem;
+    padding: 1.5rem 1.5rem;
+    background-color: #e2dede;
+}
+.container .content-container .search-button input {
+    width: 16rem;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1rem;
+}
+.container .content-container .search-button i{
+   cursor: pointer;
+}
+
+.container .content-container .add-task-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    background-color: #e2dede;
+    
+}
+.container .content-container .add-task-button input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0 8rem 0 1rem;
+    font-size: 1rem;
+}
+
+.container .content-container .add-task-button button {
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: #153677;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.container .content-container .list-task-container {
+    padding-top: 1rem;
 }
 
