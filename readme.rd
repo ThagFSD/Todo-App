@@ -1,1 +1,1 @@
-Frist Web-App using html and css 
+Simple Web App using js html css 
