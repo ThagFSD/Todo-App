@@ -69,7 +69,7 @@ ul li.checked::before {
     padding: 2rem 2rem;
     background-color: #fff;
     border-radius: 1.5rem;
-    width: 60%;
+    width: 60vh;
 }
 .container .content-container {
     display: flex;
